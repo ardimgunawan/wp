@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Quicksand">
+<head>
+<title>FAQ Server Pulsa WP</title>
+  <link rel="icon" type="image/x-icon" href="https://doc.mitrawp.web.id/www/logo/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <style>
+body {
+  background: white; /* The image used for background */
+  font-family: 'Quicksand', serif;
+
+}
+        /* Style the header */
+        header {
+            background-color: #3f4865;
+            padding: 0.2px;
+            font-size: 13px;
+            color: white;
+            text-align: center;
+        }
+
+        .text-secondary {
+            color: #3d5d6f;
+        }
+
+        .h4,
+        h4 {
+            font-size: 1.0rem;
+        }
+
+        .fa,
+        .fas {
+            font-family: 'FontAwesome';
+            font-weight: 400;
+            font-size: 1.0rem;
+            font-style: normal;
+        }
+
+        .right-0 {
+            right: 0;
+        }
+
+        .top-0 {
+            top: 0;
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        a.text-secondary:focus,
+        a.text-secondary:hover {
+            text-decoration: none;
+            color: #22343e;
+        }
+
+        #accordion .fa-plus {
+            transition: -webkit-transform 0.25s ease-in-out;
+            transition: transform 0.25s ease-in-out;
+            transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+        }
+
+        #accordion a[aria-expanded=true] .fa-plus {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <br>
+    <header>
+        <h3>FAQ | Pertanyaan Paling Sering</h3>
+    </header>
+    <div class="text-center">
+
+    </div>
+
+    <br>
+    <div class="tab">
+
+        <button class="tablinks" onclick="openFAQ(event, 'Umum')">Umum</button>
+        <button class="tablinks" onclick="openFAQ(event, 'Transaksi')">Transaksi</button>
+        <button class="tablinks" onclick="openFAQ(event, 'Downline')">Downline</button>
+        <button class="tablinks" onclick="openFAQ(event, 'PPOB')">PPOB</button>
+        <button class="tablinks" onclick="openFAQ(event, 'Saldo')">Saldo</button>
+    </div>
+
+    <div id="Saldo" class="tabcontent">
+        <section class="container my-5" id="maincontent">
+            <section id="accordion">
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-51" aria-expanded="false" data-toggle="collapse" href="#faq-51" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Apakah pembelian saldo bisa dilakukan 24 jam?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-51" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Pembelian saldo buka jam 05-22 WIB.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-52" aria-expanded="false" data-toggle="collapse" href="#faq-52" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Saya mau isi saldo 50.000 kok disuruh transfernya 50.xxx?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-52" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Pengisian saldo pulsa di server WP Trx menggunakan sistem Tiket, dimana anda mengirimkan
+                            format tiket
+                            terlebih dahulu untuk mendapatkan kode unik. Jadi 50.xxx adalah kode unik anda yang harus
+                            anda transfer
+                            sesuai dengan jumlah tersebut dan tidak di bulatkan. Jangan khawatir, saldo yang masuk
+                            adalah sejumlah yang
+                            anda transfer tanpa dikurangi.</p>
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-53" aria-expanded="false" data-toggle="collapse" href="#faq-53" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Saya tidak punya rekening, bagaimana cara beli saldonya?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-53" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Jangan khawatir, anda bisa melakukan deposit dengan cara transfer tunai lewat teller di bank,
+                            pastikan
+                            bilang ke tellernya agar transfernya sesuai tiket jangan dibulatkan. Atau isi deposit
+                            melalui Alfamart,
+                            Indomaret dan merchant lainnya. Ada panduannya kok :)</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-54" aria-expanded="false" data-toggle="collapse" href="#faq-54" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Apakah pembelian saldo hanya bisa dikirim dari 1 nomor rekening?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-54">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Anda dapat melakukan pembelian saldo dengan mentransfer dari bank mana saja, yang penting
+                            jumlah yang ditransfer
+                            sesuai dengan nominal tiket.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-55" aria-expanded="false" data-toggle="collapse" href="#faq-55" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Kenapa saldo saya belum masuk atau masuknya lama?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-55">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Hal tersebut dapat disebabkan : internet banking sedang gangguan atau error atau anda
+                            melakukan transfer di
+                            jadwal offline internet banking atau anda salah mentransfer nominal tiket deposit.<br />Namun tenang saja, cukup infokan ke CS masalah anda, dan kami siap membantu.
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="Umum" class="tabcontent">
+        <section class="container my-5" id="maincontent">
+            <section id="accordion">
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-11" aria-expanded="false" data-toggle="collapse" href="#faq-11" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara mengganti nama akun?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-11" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Format ubah nama : UN*NAMA*PIN
+                            ANDA</br><i>dikirim melalui menu messenger atau whatsapp center.</i></p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-12" aria-expanded="false" data-toggle="collapse" href="#faq-12" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara mengganti PIN?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-12" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Format ubah pin : GP*PIN BARU*PIN
+                            LAMA</br><i>dikirim melalui menu messenger atau whatsapp center.</i></p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-13" aria-expanded="false" data-toggle="collapse" href="#faq-13" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara mengganti nomor terdaftar?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-13" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Pertama : tambahkan nomor baru Anda dengan format : TNO*NOMOR*PIN ANDA</br>
+                            Kedua : hapus nomor lama Anda dengan format : HNO*NOMOR*PIN
+                            ANDA</br><i>dikirim melalui menu messenger atau whatsapp center.</i></p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-14" aria-expanded="false" data-toggle="collapse" href="#faq-14" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara deposit melalui alfamart atau indomaret?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-14">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Panduannya bisa dilihat di <a href="https://doc.mitrawp.web.id/www/alfaindo.html"><span style="color: blue;">
+                    Panduan Deposit Alfamart & Indomaret.</span></a></p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-15" aria-expanded="false" data-toggle="collapse" href="#faq-15" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara menukar komisi?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-15">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Silahkan masuk ke tab Menu Agen, lalu klik ikon komisi (ikon berlogo K), nanti ada pilihan
+                            untuk menukar komisi.
+                            <br>
+                    Bisa juga dengan mengirimkan perintah TUKARKOMISI ke center.
+                        </p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-16" aria-expanded="false" data-toggle="collapse" href="#faq-16" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara menukar poin?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-16">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Silahkan masuk ke tab Menu Agen, lalu klik ikon poin (ikon berlogo P), nanti ada pilihan
+                            untuk menukar poin.
+                            <br>
+                            Bisa juga dengan mengirimkan perintah TUKARPOINALL.PIN ke center.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="Transaksi" class="tabcontent">
+        <section class="container my-5" id="maincontent">
+            <section id="accordion">
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Transaksi bisa menggunakan apa saja?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-21" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Transaksi di Server Pulsa WP bisa melalui sms, telegram, jabber, whatsapp, aplikasi android
+                            WP Trx dan web <a
+                                href="https://app.wptrx.net"><span style="color: blue;">app.wptrx.net</span></a>.
+                            <br>Untuk setupnya, silahkan lihat <a
+                                href="https://blog.mitrawp.web.id/p/cara-setup-aplikasi-whatsapp-telegram.html"><span style="color: blue;">disini</span></a>.
+                        </p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Saya sudah kirim transaksi, tapi tidak ada balasan/respon?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-22" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Kemungkinan center transaksi yang anda gunakan sedang off atau gangguan. Silahkan kirim ulang
+                            ke center transaksi yang lain.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-23" aria-expanded="false" data-toggle="collapse" href="#faq-23" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Kenapa saya sering gagal saat melakukan pengisian paket data indosat?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-23" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Pengisian indosat data yg gagal mohon untuk pastikan:
+                            <br />
+                        <ul>
+                            <li>Pelanggan tidak berlangganan paket lain, Unreg paket lama kemudian restart HP pelanggan.
+                            </li>
+                            <li>Pulsa harus lebih dari 1.000.</li>
+                            <li>Nomor harus dalam masa aktif / Nomor dalam masa tenggang tidak bisa di isi.</li>
+                        </ul>
+                        Setelah pastikan ketiga hal tersebut ulang trx setelah 10-15menit.
+                        </p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-24" aria-expanded="false" data-toggle="collapse" href="#faq-24" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Kuota saya sudah masuk, tapi tidak bisa digunakan untuk internetan?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-24">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">
+                        <ul>
+                            <li>Coba restart dulu HP anda.</li>
+                            <li>Pastikan kuota yang dibeli sesuai lokasinya dengan posisi nomor berada.</li>
+                        </ul>
+                        </span></a></p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-25" aria-expanded="false" data-toggle="collapse" href="#faq-25" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Status transaksi menunggu jawaban, kenapa lama sekali ? Apakah bisa dibatalkan?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-25">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Transaksi dengan status menunggu jawaban berarti sudah masuk ke provider dan tidak bisa
+                            dibatalkan. Silahkan
+                            ditunggu sampai dapat balasan transaksi sukses atau gagal.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-26" aria-expanded="false" data-toggle="collapse" href="#faq-26" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Transaksi sukses, tapi pulsa atau paket data kok tidak masuk?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-26">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Silahkan informasikan ke CS kami melalui CS Whatsapp, CS Telegram atau ke center dengan
+                            format : K. isi komplain
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+
+    <div id="Downline" class="tabcontent">
+        <section class="container my-5" id="maincontent">
+            <section id="accordion">
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-31" aria-expanded="false" data-toggle="collapse" href="#faq-31" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Apakah downline itu?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-31" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Downline adalah orang yang kita rekrut untuk dijadikan Bawahan dari kita (upline) untuk bersama-sama menjual pulsa.
+
+Setiap upline mendapat komisi untuk tiap transaksi yang dilakukan oleh downline, besarnya komisi tergantung dari selisih harga yang diatur. Besarnya bisa diatur bebas, tapi sangat disarankan agar markup tidak terlalu besar, agar jaringan anda bisa berkembang.
+
+Merekrut Downline dalam bisnis pulsa bukanlah keharusan, anda tetap bisa berjualan pulsa tanpa mempunyai satu downline pun. Sistem downline pada bisnis pulsa hanyalah fitur tambahan bagi mereka yang ingin mendapatkan penghasilan tambahan selain berjualan pulsa eceran.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-32" aria-expanded="false" data-toggle="collapse" href="#faq-32" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Berapa harga yang didapat downline?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-32" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Harga yang didapatkan downline adalah : Harga upline + markup. Misal produk S10 di upline
+                            harganya 10.350, ada downline di set markup 100, maka harga yang didapat downline adalah
+                            10.450. Selisih 100 rupiah tersebut akan masuk sebagai komisi upline.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-33" aria-expanded="false" data-toggle="collapse" href="#faq-33" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Bagaimana cara mendaftarkan downline?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-33" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Anda bisa mendaftarkan downline melalui menu Downline atau dengan Format: DAFTAR.nama downline.alamatdownline.nomor hp
+                            downline.markup harga.pin</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-34" aria-expanded="false" data-toggle="collapse" href="#faq-34" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Bagaimana cara downline saya mengisi saldo ?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-34">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Ada 2 cara downline anda melakukan deposit:
+                        <ul>
+                            <li>Pertama : Deposit langsung ke server caranya seperti anda deposit. Jangan khawatir bonus
+                                tetap masuk ke anda.</li>
+                            <li>Kedua : Downline membayar kepada anda, dan saldo anda di transfer kepada downline.</li>
+                        </ul>
+                        </span></a></p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-35" aria-expanded="false" data-toggle="collapse" href="#faq-35" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Bagaimana cara menghapus downline ?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-35">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Tidak bisa. Downline akan terhapus otomatis jika pasif / tidak melakukan transaksi selama 30
+                            hari dan saldo kurang dari 1.000.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-36" aria-expanded="false" data-toggle="collapse" href="#faq-36" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">
+                            Adakah Jalur Transaksi khusus downline ? </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-36">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Sama saja bossku. Semua jalur transaksi & aplikasi yang Upline gunakan, bisa juga digunakan untuk
+                            downline.
+                        </p>
+                    </div>
+                </div>
+
+    <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+        aria-controls="faq-54" aria-expanded="false" data-toggle="collapse" href="#faq-54" role="button">
+        <div class="position-relative">
+          <h2 class="h4 m-0 pr-3">Bagaimana cara mengubah markup downline ?</h2>
+          <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+            <i class="fa fa-plus"></i>
+          </div>
+        </div>
+      </a>
+      <div class="collapse" id="faq-54">
+        <div class="card card-body border-0 p-0">
+          <p style="margin-left: 15px;">Hati-hati dalam mengubah markup! (semakin besar mark up maka semakin cepat komisi, namun mark up ini
+            merubah harga downline anda, kalau terlalu tinggi, bisa malas transaksi nanti downline Anda. Ubahlah dengan
+            bijak)</span><br />
+            <br/>
+            <b>UBAH MARK UP DOWNLINE</b>
+            <br/>
+UM.ID DOWNLINE.MARK UP.PIN
+            <br/>
+CONTOH : UM.WP002.100.1234
+            <br/><br/>
+            <b>UBAH MARKUP PRODUK UNTUK SEMUA DOWNLINE</b>
+            <br/>
+UM.KODE PRODUK=MARK UP.PIN
+            <br/>
+CONTOH : UM.ID5=500.ID10=1000.1234
+            <br/><br/>
+            <b>UBAH MARKUP PRODUK UNTUK DOWNLINE TERTENTU (Bisa lebih dari 1 produk)</b>
+            <br/>
+UM.ID DOWNLINE.KODE PRODUK=MARK UP.PIN
+            <br/>
+CONTOH : UM.WP0010.ID5=500.<br/>
+ID10=1000.ID15=1000.1234
+            <br/><br/>
+            <i>Pesan dikirim melalui menu Messenger atau ke Center Transaksi. </i>
+          </p>
+
+        </div>
+      </div>
+
+      <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+        aria-controls="faq-55" aria-expanded="false" data-toggle="collapse" href="#faq-55" role="button">
+        <div class="position-relative">
+          <h2 class="h4 m-0 pr-3">Bagaimana cara mengecek markup downline ?
+          </h2>
+          <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+            <i class="fa fa-plus"></i>
+          </div>
+        </div>
+      </a>
+      <div class="collapse" id="faq-55">
+        <div class="card card-body border-0 p-0">
+          <p style="margin-left: 15px;">CM.ID DOWNLINE.PIN<br/>
+
+CONTOH : CM.WP002.1234
+          </p>
+
+        </div>
+      </div>            
+            </section>
+        </section>
+    </div>
+
+    <div id="PPOB" class="tabcontent">
+        <section class="container my-5" id="maincontent">
+            <section id="accordion">
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-41" aria-expanded="false" data-toggle="collapse" href="#faq-41" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Apakah PPOB itu ?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-41" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;"> PPOB (Payment Point Online Bank) adalah sistem pembayaran online dengan memanfaatkan
+                            fasilitas perbankan. Seperti pembayaran tagihan listrik PLN, TELKOM, PDAM, cicilan Motor Dan
+                            lain-lain. <br />Dalam hal ini Server Pulsa WP bertindak sebagai jembatan antara agen dengan perbankan, guna memberikan kemudahan pada agen agar hanya cukup dengan 1 saldo deposit dapat melakukan berbagai macam transaksi, termasuk PPOB.
+                        </p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-42" aria-expanded="false" data-toggle="collapse" href="#faq-42" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Apa sajakah yang harus dipersiapkan untuk berjualan PPOB?
+                        </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-42" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Cukup tambahkan printer bluetooth, Anda sudah bisa berjualan PPOB. Printer bluetooth ini
+                            digunakan untuk cetak struk PPOB</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                    aria-controls="faq-43" aria-expanded="false" data-toggle="collapse" href="#faq-43" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Bagaimana cara transaksi PPOB? </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-43" style="">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Jika Anda sudah menggunakan aplikasi WP Trx, maka transaksi PPOB sangatlah mudah.<br>Untuk transaksi via Whatsapp / Telegram, langkahnya :
+                            <br>
+                        <ul>
+                            <li>Lakukan pengecekan jumlah tagihan dengan kode produk berawalan CEK</li>
+                            <li>Setelah infokan ke customer jumlah tagihannya, pembayaran dapat dilakukan dengan produk
+                                berawalan BAYAR</li>
+                        </ul>
+                        </p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-44" aria-expanded="false" data-toggle="collapse" href="#faq-44" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Berapa Harga Jual PPOB Ke Konsumen ? </h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-44">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Harga jual PPOB adalah harga tagihan + admin bank + admin outlet yang dapat anda atur saat
+                            cetak struk.</p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-45" aria-expanded="false" data-toggle="collapse" href="#faq-45" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Kalau begitu, berapa keuntungan saya dari transaksi PPOB?</h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-45">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;"> Jika dilihat, harga produk untuk membayar tagihan adalah minus (-), itu adalah fee/komisi
+                            yang akan diberikan dari Server Pulsa WP tiap Anda transaksi produk PPOB
+                            tersebut.<br />Misal : Total tagihan 25.500, untuk pembayaran produk PLN Pascabayar harga produk / fee adalah -2000. Maka saldo Anda yang terpotong adalah :<br />Total Tagihan + Harga produk/komisi = 25.500 + (-2000) = 23.500
+                            <br /><br />Pembeli akan membayar kepada Anda sebesar : Total Tagihan + biaya admin outlet = 25.500 + 2.500 (misalkan) = 28.000 (tertera di struk)<br /><br /> Jadi, jika kita hitung, maka keuntungannya adalah = 28.000 - 23.500 = 5.500
+                        </p>
+
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-46" aria-expanded="false" data-toggle="collapse" href="#faq-46" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Berapa besaran biaya admin bank untuk produk-produk PPOB?</h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-46">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Besaran biaya admin adalah berbeda-beda. Dan telah ditentukan oleh provider.</p>
+                    </div>
+                </div>
+
+                <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                    aria-controls="faq-47" aria-expanded="false" data-toggle="collapse" href="#faq-47" role="button">
+                    <div class="position-relative">
+                        <h2 class="h4 m-0 pr-3">Bagaimana cara cetak struk?</h2>
+                        <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="faq-47">
+                    <div class="card card-body border-0 p-0">
+                        <p style="margin-left: 15px;">Cetak struk bisa Anda lakukan melalui aplikasi di menu Cetak Struk atau melalui web <a
+                                href="http://struk.wptrx.net"><span style="color: blue;">struk.wptrx.net</span></a></p>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+    </div>
+
+
+    <script>
+        function openFAQ(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+
+</body>
+
+</html>
