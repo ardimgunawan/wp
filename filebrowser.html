@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tutorial FileBrowser Quantum di Windows</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f6f9;color:#333;line-height:1.7}
+header{background:#2563eb;color:#fff;padding:40px 20px}
+main{max-width:1000px;margin:auto;padding:20px}
+nav{background:#fff;padding:15px;border-radius:10px;box-shadow:0 2px 8px #0002}
+section{background:#fff;margin:20px 0;padding:25px;border-radius:10px;box-shadow:0 2px 8px #0002}
+code,pre{background:#222;color:#eee;padding:10px;border-radius:6px;display:block;overflow:auto}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #ddd;padding:8px}th{background:#2563eb;color:#fff}
+.note{background:#e8f4ff;padding:12px;border-left:4px solid #2196f3}
+.warn{background:#fff7df;padding:12px;border-left:4px solid orange}
+a{text-decoration:none}
+</style>
+</head>
+<body>
+<header><h1>Tutorial FileBrowser Quantum di Windows</h1>
+<p>Panduan lengkap membuat cloud pribadi menggunakan FileBrowser Quantum.</p></header>
+<main>
+<nav>
+<h2>Daftar Isi</h2>
+<ol>
+<li><a href="#apa">Apa itu FileBrowser Quantum</a></li>
+<li><a href="#persiapan">Persiapan</a></li>
+<li><a href="#install">Download, Install & Konfigurasi Awal</a></li>
+<li><a href="#internet">Akses dari Internet</a></li>
+<li><a href="#startup">Auto Start Windows</a></li>
+</ol>
+</nav>
+
+<section id="apa">
+<h2>1. Apa itu FileBrowser Quantum</h2>
+<p>FileBrowser Quantum adalah aplikasi manajemen file berbasis web yang memungkinkan komputer Windows menjadi cloud storage pribadi. File dapat diakses melalui browser dari jaringan lokal maupun internet.</p>
+<ul>
+<li>UI modern</li><li>Multi user</li><li>WebDAV</li><li>Office Editor</li><li>Ringan</li>
+</ul>
+</section>
+
+<section id="persiapan">
+<h2>2. Persiapan</h2>
+<table>
+<tr><th>Kebutuhan</th><th>Keterangan</th></tr>
+<tr><td>OS</td><td>Windows 10/11 64-bit</td></tr>
+<tr><td>RAM</td><td>Minimal 4 GB</td></tr>
+<tr><td>Storage</td><td>SSD untuk sistem, HDD/SSD untuk data</td></tr>
+<tr><td>Internet</td><td>Diperlukan jika ingin akses dari luar rumah</td></tr>
+</table>
+<div class="note"><b>Disarankan struktur folder:</b>
+<pre>C:\FileBrowserQuantum
+├── data
+├── database
+└── config</pre>
+</div>
+</section>
+
+<section id="install">
+<h2>3. Download, Install & Konfigurasi Awal</h2>
+<ol>
+<li>Download FileBrowser Quantum dari sumber resmi/proyek yang Anda gunakan.</li>
+<li>Ekstrak ke <code>C:\FileBrowserQuantum</code>.</li>
+<li>Jalankan executable FileBrowser Quantum.</li>
+<li>Buka browser ke alamat yang ditampilkan, misalnya <code>http://localhost:8080</code>.</li>
+<li>Login menggunakan akun default (sesuai dokumentasi versi yang digunakan), lalu segera ubah password administrator.</li>
+<li>Atur folder penyimpanan utama ke folder <code>data</code>.</li>
+<li>Buat akun pengguna jika diperlukan.</li>
+</ol>
+<div class="warn">Gunakan password administrator yang kuat dan nonaktifkan akun default jika memungkinkan.</div>
+</section>
+
+<section id="internet">
+<h2>4. Setup Akses dari Internet</h2>
+<h3>Metode 1 - Tailscale (Paling Mudah)</h3>
+<ol>
+<li>Install Tailscale di komputer server.</li>
+<li>Login menggunakan akun Tailscale.</li>
+<li>Install Tailscale pada perangkat lain.</li>
+<li>Akses FileBrowser menggunakan IP Tailscale, misalnya <code>100.x.x.x:8080</code>.</li>
+</ol>
+<p><b>Kelebihan:</b> Sangat aman, tanpa port forwarding.</p>
+
+<h3>Metode 2 - Cloudflare Tunnel</h3>
+<ol>
+<li>Memiliki domain yang sudah menggunakan Cloudflare.</li>
+<li>Install cloudflared.</li>
+<li>Login ke Cloudflare.</li>
+<li>Buat Tunnel.</li>
+<li>Hubungkan hostname ke <code>http://localhost:8080</code>.</li>
+<li>Uji akses melalui domain.</li>
+</ol>
+<p><b>Kelebihan:</b> Bisa diakses publik menggunakan domain tanpa membuka port router.</p>
+</section>
+
+<section id="startup">
+<h2>5. Membuat Service Otomatis Saat Windows Startup</h2>
+<p>Metode yang direkomendasikan adalah menggunakan NSSM.</p>
+<ol>
+<li>Download NSSM.</li>
+<li>Jalankan <code>nssm install</code>.</li>
+<li>Pilih executable FileBrowser Quantum.</li>
+<li>Isi Startup Directory.</li>
+<li>Klik Install Service.</li>
+<li>Buka Services dan jalankan service.</li>
+<li>Set Startup Type menjadi <b>Automatic</b>.</li>
+</ol>
+<pre>services.msc</pre>
+<div class="note">Sekarang FileBrowser Quantum akan otomatis berjalan setiap kali Windows menyala tanpa perlu login terlebih dahulu.</div>
+</section>
+
+<section>
+<h2>Troubleshooting Singkat</h2>
+<ul>
+<li>Port bentrok → ganti port.</li>
+<li>Tidak bisa diakses → cek Firewall Windows.</li>
+<li>Tailscale gagal → pastikan kedua perangkat online.</li>
+<li>Cloudflare 502 → cek Tunnel dan service berjalan.</li>
+</ul>
+</section>
+</main>
+</body></html>
